@@ -21,13 +21,19 @@ quasar ext add @develate/quasar-ext-utils
 ````bash
 quasar ext remove @develate/quasar-ext-utils```
 
-## Info
+## Local network development
 
-> Add longer information here that will help the user of your app extension.
+Pass `--ni` to a development run to bind Quasar to the current local IPv4
+address. The extra `--` is required because Quasar does not accept extension
+specific top-level options:
 
-## Other Info
+```bash
+quasar dev -- --ni
+```
 
-> Add other information that's not as important to know
+The extension prefers private LAN addresses (`10.x.x.x`, `192.168.x.x`, or
+`172.16.x.x` through `172.31.x.x`) and falls back to another non-internal IPv4
+address or `localhost`.
 
 ## Donate
 
