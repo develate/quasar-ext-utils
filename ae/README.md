@@ -1,10 +1,6 @@
-# Quasar App Extension "@develate/quasar-ext-utils"
+# `@develate/quasar-ext-utils`
 
-_Be sure to change this readme as appropriate for your app extension._
-
-_Think about the organization of this file and how the information will be beneficial to the user._
-
-> Add a short description of your App Extension. What does it do? How is it beneficial? Why would someone want to use it?
+A Quasar App Extension with shared Quasar/Vue utilities and development helpers.
 
 ## Install
 
@@ -12,14 +8,11 @@ _Think about the organization of this file and how the information will be benef
 quasar ext add @develate/quasar-ext-utils
 ```
 
-### Prompts
-
-> Explain the prompts here
-
 ## Uninstall
 
-````bash
-quasar ext remove @develate/quasar-ext-utils```
+```bash
+quasar ext remove @develate/quasar-ext-utils
+```
 
 ## Local network development
 
@@ -38,4 +31,3 @@ address or `localhost`.
 ## Donate
 
 If you appreciate the work that went into this App Extension, please consider [donating to Quasar](https://donate.quasar.dev).
-````

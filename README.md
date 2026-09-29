@@ -21,7 +21,7 @@ The extension itself lives in [`ae/`](ae/). [`playground/`](playground/) is a Qu
 From a Quasar application, install the published package with:
 
 ```bash
-quasar ext add @develate/quasar-app-extension-quasar-ext-utils
+quasar ext add @develate/quasar-ext-utils
 ```
 
 After installation, start the application as usual:
@@ -73,14 +73,14 @@ pnpm run invoke
 pnpm run cycle
 ```
 
-Use `pnpm run invoke` after changing extension install, prompt, or uninstall scripts. Use `pnpm run cycle` when you need to exercise the full uninstall/reinstall flow.
+Use `pnpm run invoke` after changing extension install or uninstall scripts. Use `pnpm run cycle` when you need to exercise the full uninstall/reinstall flow.
 
 The main extension entry points are:
 
 - [`ae/src/index.ts`](ae/src/index.ts) — extends the Quasar configuration and dev server settings;
 - [`ae/src/install.ts`](ae/src/install.ts) — adds helper scripts to the host application;
-- [`ae/src/prompts.ts`](ae/src/prompts.ts) — handles extension-install prompts; and
-- [`ae/src/runtime/`](ae/src/runtime/) — contains runtime boot code and components.
+- [`ae/src/runtime/`](ae/src/runtime/) — contains runtime boot code and components; and
+- [`ae/src/uninstall.ts`](ae/src/uninstall.ts) — handles extension removal.
 
 ## Publish
 

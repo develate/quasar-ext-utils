@@ -1,6 +1,6 @@
 {
-  "name": "@develate/quasar-app-extension-quasar-ext-utils",
-  "version": "0.0.1",
+  "name": "@develate/quasar-ext-utils",
+  "version": "0.0.2",
   "description": "A Quasar App Extension",
   "keywords": [
     "quasar",
@@ -16,9 +16,6 @@
   "main": "src/index.ts",
   "imports": {
     "#q-app": "@quasar/app-vite"
-  },
-  "dependencies": {
-    "@clack/prompts": "^1.4.0"
   },
   "devDependencies": {
     "@quasar/app-vite": "catalog:",

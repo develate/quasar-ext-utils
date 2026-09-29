@@ -37,10 +37,6 @@ importers:
         version: 3.3.10(typescript@6.0.3)
 
   ae:
-    dependencies:
-      '@clack/prompts':
-        specifier: ^1.4.0
-        version: 1.7.0
     devDependencies:
       '@quasar/app-vite':
         specifier: 'catalog:'
