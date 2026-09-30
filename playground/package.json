@@ -9,8 +9,8 @@
     "dev": "quasar dev",
     "build": "quasar build",
     "prepare": "quasar prepare --silent",
-    "invoke": "quasar ext invoke @develate/quasar-ext-utils",
-    "cycle": "quasar ext uninvoke @develate/quasar-ext-utils && quasar ext invoke @develate/quasar-ext-utils"
+    "invoke": "quasar ext invoke @develate/quasar-app-extension-quasar-ext-utils",
+    "cycle": "quasar ext uninvoke @develate/quasar-app-extension-quasar-ext-utils && quasar ext invoke @develate/quasar-app-extension-quasar-ext-utils"
   },
   "dependencies": {
     "@quasar/extras": "^2.0.4",

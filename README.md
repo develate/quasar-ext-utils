@@ -1,4 +1,4 @@
-# @develate/quasar-ext-utils
+# @develate/quasar-app-extension-quasar-ext-utils
 
 A Quasar App Extension workspace for shared Quasar/Vue utilities and development helpers.
 
@@ -22,7 +22,7 @@ The extension itself lives in [`ae/`](ae/). [`playground/`](playground/) is a Qu
 From a Quasar application, install the published package with:
 
 ```bash
-quasar ext add @develate/quasar-ext-utils
+quasar ext add @develate/quasar-app-extension-quasar-ext-utils
 ```
 
 After installation, start the application as usual:
