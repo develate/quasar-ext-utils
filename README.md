@@ -5,8 +5,9 @@ A Quasar App Extension workspace for shared Quasar/Vue utilities and development
 The extension currently includes:
 
 - a boot script that registers the demo `<my-component>` component globally;
-- an opt-in `--ni` development flag that binds Quasar to a private local-network IPv4 address; and
-- install-time helper scripts for pulling, setting up, and developing/building a Capacitor iOS target.
+- an opt-in `--ni` development flag that binds Quasar to a private local-network IPv4 address;
+- install-time helper scripts for pulling, setting up, and developing/building a Capacitor iOS target; and
+- separate `.env.dev` and `.env.build` files for development and builds.
 
 The extension itself lives in [`ae/`](ae/). [`playground/`](playground/) is a Quasar app used to develop and manually exercise it.
 
@@ -29,6 +30,8 @@ After installation, start the application as usual:
 ```bash
 quasar dev
 ```
+
+Installation creates `.env.dev` and `.env.build`. If the app already has a `.env`, its values are copied into both files and the original is removed. Existing values in either mode-specific file take precedence. `quasar dev` loads `.env.dev`, and `quasar build` loads `.env.build`.
 
 The extension registers `<my-component>` during boot. Its current implementation is a scaffold intended to be replaced or extended as the utility package grows.
 

@@ -32,6 +32,19 @@ export default defineIndexScript(api => {
     ]
   }));
 
+  api.extendQuasarConf((conf, extensionApi) => {
+    const env = ((conf.build ??= {}).env ??= {});
+    const file = extensionApi.ctx.dev ? ".env.dev" : ".env.build";
+    const configuredFiles = env.file;
+    const files = Array.isArray(configuredFiles)
+      ? configuredFiles
+      : configuredFiles
+        ? [configuredFiles]
+        : [];
+
+    env.file = files.includes(file) ? files : [...files, file];
+  });
+
   api.extendQuasarConf((_, extensionApi) => {
     if (!extensionApi.ctx.dev || !process.argv.includes("--ni")) {
       return;

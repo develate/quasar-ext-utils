@@ -8,6 +8,8 @@ A Quasar App Extension with shared Quasar/Vue utilities and development helpers.
 quasar ext add @develate/quasar-ext-utils
 ```
 
+Installation creates `.env.dev` and `.env.build` in the app root. If `.env` already exists, its values are copied into both files and `.env` is removed. Existing mode-specific values take precedence. Quasar loads `.env.dev` for `quasar dev` and `.env.build` for `quasar build`.
+
 ## Uninstall
 
 ```bash
